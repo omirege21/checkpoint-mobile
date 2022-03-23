@@ -7,6 +7,12 @@ header, nav{
     font-weight: 600;
 }
 
+body{
+    background-image: url(../images/background.jpg);
+}
+
+
+
 nav {
     background-color: #8a2613;
     margin-bottom: 20px;
@@ -55,11 +61,9 @@ nav li.active a:hover{
     text-decoration: none;
 }
 
-/* 
-<-Width, border, margin, padding, and border radius are used on every image. Pseudo classes are used to style every other (or every third) image
-*/
 
-main {
+
+h1 , main {
     min-width: 200px;
     width: 80%;
     margin-left: auto;
@@ -67,7 +71,15 @@ main {
     margin-top: 20px;
     font-family: 'Quicksand';
     font-weight: 200;
+    padding: 30px;
+    border-radius: 4px;
+    background-color: bisque;
 }
+
+h1{
+    font-weight: 600;
+}
+
 
 .gallery {
     display: flex;
