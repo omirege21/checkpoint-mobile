@@ -51,24 +51,54 @@
 		</p>	
 		<img src = "images/mapsearch.jpg" width="200" alt= "Looking for the next destination"/>
 
-		<div class="form-container">
-			<label for="fullname">Name <i class="fa-solid fa-user"></i></label>
-			<input type="text" name="name" id="fullname" placeholder="Enter Your Name">
+		<form action="https://formspree.io/f/mbjwarrk" method="POST">
+  			
+			<section class="name">
+				<label for="fullname">Name <i class="fa-solid fa-user"></i></label>
+				<input type="text" name="name" id="fullname" placeholder="Enter Your Name">
+			</section>
 
-			<label for="email">Email <i class="fa-solid fa-envelope"></i></label>
-			<input type="email" value="" name="email" id="email" placeholder="Enter Your Email">
+			<section class="email">
+				<label for="email">Email <i class="fa-solid fa-envelope"></i></label>
+				<input type="email" value="" name="email" id="email" placeholder="Enter Your Email">
+			</section>
 
-			<label for="msg">Leave A Message <i class="fa-solid fa-pen"></i></label>
-			<textarea placeholder="Enter your message" id="msg" name="message"></textarea>
+			<section class="note">
+				<label for="msg">Leave A Message <i class="fa-solid fa-pen"></i></label>
+				<textarea placeholder="Enter your message" id="msg" name="message"></textarea>
+			</section>
+			
+			<section class="budget">
+				<label for="budget">How much are you looking to spend per person? <i class="fa-solid fa-money-bill"></i></label>
+				<input type="radio" name="budget" id="min" value="min">
+				<label for="min"> <$200 </label>
+				<input type="radio" name="budget" id="low" value="low">
+				<label for="low"> $200 to $500 </label>
+				<input type="radio" name="budget" id="mid" value="mid">
+				<label for="mid"> $500 to $1000 </label>
+				<input type="radio" name="budget" id="high" value="high">
+				<label for="high"> $1000+ </label>
+			</section>
 
-			<label for="budget">How much are you looking to spend? <i class="fa-solid fa-money-bill"></i></label>
-          	<dropdown placeholder="Enter your message" id="budget" name="message"></dropdown>
+			<section class="date-range">
+				<label for="date-range">What timeframe are you looking at for your trip?</label>
+				<select name="date-range" id="date-range">
+					<option value="month">Within a month</option>
+					<option value="3 months">Within three months</option>
+					<option value="year">Within a year</option>
+				</select>
+			</section>
 
-			<input type="checkbox" id="remember" name="remember">
-			<label for="remember" id="remember-me">Remember me</label>
+			<section class="remember">
+				<input type="checkbox" id="remember" name="remember">
+				<label for="remember" id="remember-me">Remember me</label>
+			</section>
 
-			<input type="submit" value="Submit" id="submit">
-        </div>
+			<section class="submit">
+				<input type="submit" value="Submit" id="submit">
+			</section>
+
+		</form>
 
 	</main>
 

@@ -20,6 +20,10 @@ nav {
 }
 
 nav ul{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     min-width: 200px;
     min-height: 100px;
     padding: 20px;
@@ -131,5 +135,17 @@ footer{
     justify-content: space-evenly;
 }
 
+.form{
+    width:80%;
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+}
 
+section{
+    justify-content: center;
+}
 
+main{
+    min-height: 700px;
+}
