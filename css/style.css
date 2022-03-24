@@ -93,7 +93,7 @@ h1{
     
 }
 
-img {
+img.gallery {
 
     border: solid 5px #242424;
     margin-left: auto;
@@ -109,11 +109,11 @@ img {
     
 }
 
-img:nth-child(even) {
+img.gallery:nth-child(even) {
     border: solid 5px #006f40;
 }
 
-img:hover, img:nth-child(even):hover {
+img.gallery:hover, img.gallery:nth-child(even):hover {
     border: ridge 10px #242424;
     width: 85%;
     border-radius: 8px;
@@ -149,3 +149,27 @@ section{
 main{
     min-height: 700px;
 }
+
+#airplane {
+    animation-name: mymove;
+    animation-duration: 10s;
+    animation-iteration-count: 500;
+    width:200px;
+}
+  
+@keyframes mymove {
+    from {
+        margin-left: 200%;
+
+    }
+    
+    to {
+        margin-left: -200%;
+    }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+    #airplane {
+        animation: none;
+    }
+  }
