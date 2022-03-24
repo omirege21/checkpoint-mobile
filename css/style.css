@@ -85,12 +85,11 @@ h1{
 }
 
 
-.gallery {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    
+grid-gallery {
+    width:90%;
+    max-width:100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 img.gallery {
@@ -103,13 +102,11 @@ img.gallery {
     padding: 5px; 
     border-radius: 2px;
     align-self: center;
-    min-width: 20%;
-    max-width: 21%;
-
+    max-width: 80%;
     
 }
 
-img.gallery:nth-child(even) {
+img.gallery:nth-child(odd) {
     border: solid 5px #006f40;
 }
 
