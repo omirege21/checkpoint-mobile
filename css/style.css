@@ -79,6 +79,7 @@ h1 , main {
     padding: 30px;
     border-radius: 4px;
     background-color: bisque;
+    border: 2px solid gainsboro;
 }
 
 h1{
@@ -145,8 +146,23 @@ section{
     justify-content: center;
 }
 
+form {
+    padding:10px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 6px;
+    border: solid 3px #8a2613;
+}
+
+section {
+    margin: 10px;
+}
+
+
 main{
     min-height: 700px;
+    margin-bottom: 10px;
 }
 
 #airplane {
@@ -180,3 +196,4 @@ gallery-flex{
     justify-content: space-between;
     align-items: center;
 }
+
