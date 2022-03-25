@@ -175,7 +175,6 @@ main{
 @keyframes mymove {
     from {
         margin-left: 200%;
-
     }
     
     to {
@@ -183,9 +182,22 @@ main{
     }
 }
 
+@keyframes planet {
+    from {
+        margin-bottom: 20%;
+    }
+    
+    to {
+        margin-bottom: 11%;
+    }
+}
+
 @media screen and (prefers-reduced-motion: reduce) {
     #airplane {
         animation: none;
+    }
+    balloon:hover{
+        animation:none;
     }
   }
 
@@ -197,3 +209,11 @@ gallery-flex{
     align-items: center;
 }
 
+balloon:hover img{
+    animation: planet;
+    animation-duration: 3s;
+    animation-iteration-count: 500;
+    width:200px;
+    z-index: 999;
+    
+}
