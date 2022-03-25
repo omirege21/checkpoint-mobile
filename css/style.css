@@ -183,11 +183,15 @@ main{
 
 @keyframes planet {
     from {
-        margin-bottom: 20%;
+        margin-bottom: 300%;
     }
     
     to {
-        margin-bottom: 11%;
+        margin-bottom: 256%;
+    }
+
+    to {
+        margin-bottom: 306%;
     }
 }
 
